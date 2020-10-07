@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="/authentication/form" method="post">
+		<div>username: <input name="username" type="text" /></div>
+		<div>password: <input name="password" type="password" /></div>
+		<div>image code: <input name="codeImage" type="text" /><img src="/code/image" /></div>
+		<div><input type="submit" /></div>
+	</form>
+	
+	
+<br /><br />
+
+<form action="/authentication/mobile" method="post">
+		<div>username: <input name="mobile" type="text" value="324324"/></div>
+		<div>Sms: <input name="smsCode" type="text" /></div>
+		<div><a href="/code/sms?mobile=324324" >send</a></div>
+		<div><input type="submit" /></div>
+	</form>
+</body>
+</html>
